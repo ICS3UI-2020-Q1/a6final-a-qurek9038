@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "sample",
+      "setup": "javac Main.java",
+      "run": "java Main",
+      "input": "A\r\nA\r\nB\r\nC\r\nB\r\nA\r\nC\r\nC\r\nA\r\nB",
+      "output": "Please enter the answers to the test:\r\nPlease enter the student answers:\r\nScore: 2\r\n",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "all same",
+      "setup": "javac Main.java",
+      "run": "java Main",
+      "input": "A\r\nA\r\nA\r\nA\r\nA\r\nA\r\nA\r\nA\r\nA\r\nA",
+      "output": "Please enter the answers to the test:\r\nPlease enter the student answers:\r\nScore: 5\r\n",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "All wrong",
+      "setup": "javac Main.java",
+      "run": "java Main",
+      "input": "A\r\nB\r\nC\r\nD\r\nA\r\nD\r\nC\r\nB\r\nA\r\nD",
+      "output": "Please enter the answers to the test:\r\nPlease enter the student answers:\r\nScore: 0\r\n",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    }
+  ]
+}
