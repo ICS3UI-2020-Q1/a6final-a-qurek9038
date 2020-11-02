@@ -47,6 +47,5 @@ public class Main {
 
     //Display the score to user
     System.out.println("Score:" + score);
-
   }
 }
